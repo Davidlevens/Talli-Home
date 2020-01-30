@@ -16,6 +16,7 @@ import Signup from "./pages/Signup";
 
 import itemDetails from "./pages/itemDetails";
 import Items from "./pages/items";
+import about from "./pages/about";
 
 
 
@@ -39,6 +40,7 @@ export default function App() {
 
         <ConnectedPrivateRoute exact path="/items" component={Items} />
         <ConnectedPrivateRoute path="/items/:id" component={itemDetails} />
+        <ConnectedPrivateRoute path="/about" component={about} />
 
 
         <Route path="*"><NoMatch /></Route>

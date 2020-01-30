@@ -5,7 +5,7 @@ import Jumbotron from "../components/Jumbotron";
 import API from "../api";
 import './App.scss';
 
-class itemDetails extends Component {
+class About extends Component {
     state = {
         item: {}
     };
@@ -61,4 +61,4 @@ class itemDetails extends Component {
     }
 }
 
-export default about;
+export default About;
