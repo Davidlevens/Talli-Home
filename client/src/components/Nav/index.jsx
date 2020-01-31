@@ -8,7 +8,7 @@ import './App.scss';
 import { onLogout } from '../../redux/actions'
 
 const Nav = (props) => {
-  return <Navbar className='navbar-expand-lg justify-content-between'>
+  return <Navbar className='navbar-expand-lg justify-content-between' navbar="true">
    <div container="navlink">
   <Navbar className="ml-auto" navbar>
           <NavItem>

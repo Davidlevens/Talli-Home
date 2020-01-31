@@ -13,9 +13,8 @@ import { Form, FormControl } from 'react-bootstrap';
 class Items extends Component {
     state = {
         // MUST MATCH "itemSeed" OBJECT IN "seedDB.js" file 
+        room: "",
         name: [],
-        rooms: ["Kitchen", "Garage", "Master Bedroom", "Living Room", "Suite", "Bathroom"],
-        location: "",
         modelNumber: "",
         purchaseDate: "",
         purchasePrice: "",
@@ -36,7 +35,7 @@ class Items extends Component {
                 //     return { value: room, display: room }
                 // });
                 this.setState({
-                    items: res.data, name: "", location: "", description: "", purchaseDate: "",
+                    items: res.data, name: "", room: "", description: "", purchaseDate: "",
                     purchasePrice: ""
                 });
             })
@@ -50,6 +49,12 @@ class Items extends Component {
             .catch(err => console.log(err));
     };
 
+    handleChange = (e) => {
+        console.log(e.target.value); // room        
+        this.setState({ [e.target.name]: e.target.value });
+        console.log(this.state.room);
+    };
+
     handleInputChange = event => {
         const { name, value } = event.target;
         this.setState({
@@ -59,15 +64,15 @@ class Items extends Component {
 
     handleFormSubmit = event => {
         event.preventDefault();
-        if (this.state.name && this.state.rooms) {
+        if (this.state.name && this.state.room) {
             API.saveItem({
+                room: this.state.room,
                 name: this.state.name,
-                rooms: this.state.rooms,
-                location: this.state.location,
-                description: this.state.description,
                 modelNumber: this.state.modelNumber,
                 purchaseDate: this.state.purchaseDate,
-                purchasePrice: this.state.purchasePrice
+                purchasePrice: this.state.purchasePrice,
+                purchaseLocation: this.state.purchaseLocation,
+                description: this.state.description
             })
                 .then(res => this.loadItems())
                 .catch(err => console.log(err));
@@ -85,10 +90,24 @@ class Items extends Component {
                         </Jumbotron>
                         <form>
                             <Form.Group controlId="exampleForm.ControlSelect1">
-                                <Form.Control as="select">
+                                <Form.Label>Choose a location</Form.Label>
+                                <Form.Control as="select"
+                                    value={this.state.room}
+                                    onChange={this.handleChange}
+                                    name="room"
+                                    placeholder="Room Name (required)" >
                                     <option id='0'>Where is it in the House?</option>
-                                    {this.state.rooms.map((room) => 
-                                    <option key={room} value={room}>{room}</option>)}
+                                    <option>Kitchen</option>
+                                    <option>Master Bedroom</option>
+                                    <option>Bedroom 1</option>
+                                    <option>Bedroom 2</option>
+                                    <option>Bedroom 3</option>
+                                    <option>Kitchen</option>
+                                    <option>Living Room</option>
+                                    <option>Dining Room</option>
+                                    <option>Family Room</option>
+                                    <option>Office</option>
+                                    <option>Garage</option>
                                 </Form.Control>
                             </Form.Group>
 
@@ -97,12 +116,6 @@ class Items extends Component {
                                 onChange={this.handleInputChange}
                                 name="name"
                                 placeholder="Item Name (required)"
-                            />
-                            <Input
-                                value={this.state.location}
-                                onChange={this.handleInputChange}
-                                name="location"
-                                placeholder="Location (required)"
                             />
                             <Input
                                 value={this.state.modelNumber}
@@ -135,7 +148,7 @@ class Items extends Component {
                                 placeholder="Description (required)"
                             />
                             <FormBtn
-                                disabled={!(this.state.name && this.state.location)}
+                                disabled={!(this.state.name && this.state.room)}
                                 onClick={this.handleFormSubmit}
                             >
                                 Add Item
@@ -152,7 +165,7 @@ class Items extends Component {
                                     <ListItem key={item._id}>
                                         <Link to={"/items/" + item._id}>
                                             <strong>
-                                                {item.name} in {this.state.rooms}
+                                                {item.name} in {item.room}
                                             </strong>
                                         </Link>
                                         <DeleteBtn onClick={() => this.deleteItem(item._id)} />

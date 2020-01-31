@@ -40,13 +40,12 @@ const Schema = mongoose.Schema;
 
 //reseeded DB ... now updated schema here...
 const itemSchema = new Schema({
-  name: { type: String, required: true },
-  rooms: { type: Array, required: true },
-  location: { type: String, required: true },
+  room: { type: String, required: true },
+  name: { type: String, required: true },  
   modelNumber: { type: String, required: false },
   purchaseDate: {type: Date},
   purchasePrice: {type: String},
-  purchaseLocation: {type: Date},
+  purchaseLocation: {type: String},
   description: { type: String },
   date: { type: Date, default: Date.now },
   user: { type: Schema.Types.ObjectId, ref: 'User', required: true}

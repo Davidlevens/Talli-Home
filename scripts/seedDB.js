@@ -33,9 +33,8 @@ const demoUserSeed = [
 
 const itemSeed = [
   {
+    room: "Master Bedroom",
     name: "Samsung TV",
-    rooms: "Master Bedroom",
-    location: "Living Room",
     modelNumber: "SCS4325476",
     purchaseDate: "09/27/18",
     purchasePrice: "$450",
@@ -45,9 +44,8 @@ const itemSeed = [
   },
 
   {
+    room: "Kitchen",
     name: "Vynil Record Player",
-    rooms: "Kitchen",
-    location: "Living Room",
     modelNumber: "ATS4456290",
     purchaseDate: "03/05/19",
     purchasePrice: "$200",
