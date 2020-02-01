@@ -1,4 +1,4 @@
-import React, { Component, Children } from "react";
+import React, { Component } from "react";
 import DeleteBtn from "../components/DeleteBtn";
 import Jumbotron from "../components/Jumbotron";
 import API from "../api";
@@ -8,7 +8,7 @@ import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 import './App.scss';
 
-import { Form, FormControl } from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
 
 class Items extends Component {
     state = {
