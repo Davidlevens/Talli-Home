@@ -96,7 +96,7 @@ class Items extends Component {
                                     onChange={this.handleChange}
                                     name="room"
                                     placeholder="Room Name (required)" >
-                                    <option id='0'>Where is it in the House?</option>
+                                    <option id='0'>Room Name (required)</option>
                                     <option>Kitchen</option>
                                     <option>Master Bedroom</option>
                                     <option>Bedroom 1</option>
