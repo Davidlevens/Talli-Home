@@ -95,6 +95,7 @@ class Items extends Component {
                                 onChange={this.handleInputChange}
                                 name="name"
                                 placeholder="Item Name (required)"
+                                autocomplete="off"
                             />
                             <Form.Group controlId="exampleForm.ControlSelect1">                                
                                 <Form.Control as="select"
