@@ -86,11 +86,17 @@ class Items extends Component {
                 <Row>
                     <Col size="md-6">
                         <Jumbotron>
-                            <h1>What are you moving?</h1>
+                            <h1>Item Input Form</h1>
                         </Jumbotron>
                         <form>
-                            <Form.Group controlId="exampleForm.ControlSelect1">
-                                <Form.Label>Choose a location</Form.Label>
+                        <Form.Label>Create an Item, Choose a Location, Add Details</Form.Label>
+                            <Input
+                                value={this.state.name}
+                                onChange={this.handleInputChange}
+                                name="name"
+                                placeholder="Item Name (required)"
+                            />
+                            <Form.Group controlId="exampleForm.ControlSelect1">                                
                                 <Form.Control as="select"
                                     value={this.state.room}
                                     onChange={this.handleChange}
@@ -110,13 +116,6 @@ class Items extends Component {
                                     <option>Garage</option>
                                 </Form.Control>
                             </Form.Group>
-
-                            <Input
-                                value={this.state.name}
-                                onChange={this.handleInputChange}
-                                name="name"
-                                placeholder="Item Name (required)"
-                            />
                             <Input
                                 value={this.state.modelNumber}
                                 onChange={this.handleInputChange}
