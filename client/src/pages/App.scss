@@ -35,3 +35,9 @@ border-color: #2788ff;
         font-family: 'Handlee', cursive;
     
 }
+input[type="date"]::before{
+    content: attr(placeholder) "Purchase Date:  ";
+ }
+ input[type="date"]:focus::before {
+    content: "" !important;
+ }

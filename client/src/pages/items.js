@@ -121,25 +121,24 @@ class Items extends Component {
                                 value={this.state.modelNumber}
                                 onChange={this.handleInputChange}
                                 name="modelNumber"
-                                placeholder="Model / Serial Number (required)"
+                                placeholder="Model / Serial Number"
                             />
-                            <Input
+                            <Input type="date"
                                 value={this.state.purchaseDate}
                                 onChange={this.handleInputChange}
                                 name="purchaseDate"
-                                placeholder="Purchase Date (required)"
                             />
                             <Input
                                 value={this.state.purchasePrice}
                                 onChange={this.handleInputChange}
                                 name="purchasePrice"
-                                placeholder="Purchase Price (required)"
+                                placeholder="Purchase Price"
                             />
                             <Input
                                 value={this.state.purchaseLocation}
                                 onChange={this.handleInputChange}
                                 name="purchaseLocation"
-                                placeholder=" Purchase Location (required)"
+                                placeholder=" Purchase Location"
                             />
                             <TextArea
                                 value={this.state.description}
@@ -159,6 +158,7 @@ class Items extends Component {
                         <Jumbotron>
                             <h1>Item Tracker</h1>
                         </Jumbotron>
+                        <Form.Label>Choose an Item to see details</Form.Label>
                         {this.state.items && this.state.items.length ? (
                             <List>
                                 {this.state.items.map(item => (
