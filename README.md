@@ -25,18 +25,21 @@ Missing from app:
 
 App can be run locally by running (from project root directory):
 
+* npm install
+* npm start
+* Requires local instance of mongoDB to run
+
 ```
-npm i
-npm start
+or can be used on heroku at: [Talli-Home](https://talli-home.herokuapp.com/)"(target|_blank)")
+
+Signup with your own account on the sign up page: [Signup](https://talli-home.herokuapp.com/signup){:target="blank" rel="noopener"}
+or
+Login with your username and password here: [Login](https://talli-home.herokuapp.com/login){:target="blank" rel="noopener"}
+
+username: 'demo1'
+password: '12345678'
+
 ```
-
-or can be used on heroku at:
-https://inventory-list.herokuapp.com/
-
-Signup with your own account on the sign up page: https://inventory-list.herokuapp.com/signup
-or login with
-
-username: `demo1`   
 
 # react-redux-firebase
 
@@ -64,12 +67,12 @@ The [Material Example](https://github.com/prescottprue/react-redux-firebase/tree
 * Out of the box support for authentication (with auto load user profile)
 * Full Firebase Platform Support Including Real Time Database, Firestore, and Storage
 * Automatic binding/unbinding of listeners through React Hooks (`useFirebaseConnect`, `useFirestoreConnect`) or Higher Order Components (`firebaseConnect` and `firestoreConnect`)
-* [Population capability](http://react-redux-firebase.com/docs/populate) (similar to mongoose's `populate` or SQL's `JOIN`)
+* [Population capability](https://react-redux-firebase.com/docs/populate) (similar to mongoose's `populate` or SQL's `JOIN`)
 * Support small data ( using `value` ) or large datasets ( using `child_added`, `child_removed`, `child_changed` )
 * Multiple queries types supported including `orderByChild`, `orderByKey`, `orderByValue`, `orderByPriority`, `limitToLast`, `limitToFirst`, `startAt`, `endAt`, `equalTo`
 * Tons of examples of integrations including [`redux-thunk`](https://github.com/gaearon/redux-thunk) and [`redux-observable`](https://redux-observable.js.org/)
 * Server Side Rendering Support
-* [`react-native` support](http://react-redux-firebase.com/docs/integrations/react-native.html) using [native modules](http://react-redux-firebase.com/docs/integrations/react-native.html#native-modules) or [web sdk](http://react-redux-firebase.com/docs/integrations/react-native.html#jsweb)
+* [`react-native` support](https://react-redux-firebase.com/docs/integrations/react-native.html) using [native modules](https://react-redux-firebase.com/docs/integrations/react-native.html#native-modules) or [web sdk](https://react-redux-firebase.com/docs/integrations/react-native.html#jsweb)
 
 ## Installation
 
@@ -308,22 +311,22 @@ If you plan to use Firestore, you should checkout [`redux-firestore`][redux-fire
 
 Currently `react-redux-firebase` still handles auth when using [`redux-firestore`][redux-firestore] - The future plan is to also have auth standalone auth library that will allow the developer to choose which pieces they do/do not want.
 
-## [Docs](http://react-redux-firebase.com)
+## [Docs](https://react-redux-firebase.com)
 
 See full documentation at [react-redux-firebase.com](http://react-redux-firebase.com)
 
-* [Getting Started](http://react-redux-firebase.com/docs/getting_started)
-* [Auth](http://react-redux-firebase.com/docs/auth)
-* [Queries](http://react-redux-firebase.com/docs/queries)
-* [Firestore](http://react-redux-firebase.com/docs/firestore)
-* [Populate](http://react-redux-firebase.com/docs/populate)
-* [API Reference](http://react-redux-firebase.com/docs/api)
+* [Getting Started](https://react-redux-firebase.com/docs/getting_started)
+* [Auth](https://react-redux-firebase.com/docs/auth)
+* [Queries](https://react-redux-firebase.com/docs/queries)
+* [Firestore](https://react-redux-firebase.com/docs/firestore)
+* [Populate](https://react-redux-firebase.com/docs/populate)
+* [API Reference](https://react-redux-firebase.com/docs/api)
 
 ## [Examples](examples)
 
 ### Real World Applications
 
-* [fireadmin.io](http://fireadmin.io) - Firebase Instance Management Tool (source [available here](https://github.com/prescottprue/fireadmin))
+* [fireadmin.io](https://fireadmin.io) - Firebase Instance Management Tool (source [available here](https://github.com/prescottprue/fireadmin))
 
 If you would like a project added to this section please reach out [over gitter][gitter-url]
 
@@ -413,7 +416,7 @@ Thank you to all our backers! 🙏
 [npm-image]: https://img.shields.io/npm/v/react-redux-firebase.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/react-redux-firebase
 [npm-downloads-image]: https://img.shields.io/npm/dm/react-redux-firebase.svg?style=flat-square
-[quality-image]: http://npm.packagequality.com/shield/react-redux-firebase.svg?style=flat-square
+[quality-image]: https://npm.packagequality.com/shield/react-redux-firebase.svg?style=flat-square
 [quality-url]: https://packagequality.com/#?package=react-redux-firebase
 [backers]: https://opencollective.com/react-redux-firebase/backers/badge.svg?style=flat-square&color=blue
 [become-a-backer]: https://opencollective.com/react-redux-firebase#backer
