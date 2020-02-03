@@ -75,6 +75,15 @@ class Items extends Component {
                 description: this.state.description
             })
                 .then(res => this.loadItems())
+                .then(res => this.setState({
+                    room: "",
+                    name: [],
+                    modelNumber: "",
+                    purchaseDate: "",
+                    purchasePrice: "",
+                    purchaseLocation: "",
+                    description: "",
+                }))
                 .catch(err => console.log(err));
         }
     };
