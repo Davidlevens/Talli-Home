@@ -29,17 +29,15 @@ App can be run locally by running (from project root directory):
 * npm start
 * Requires local instance of mongoDB to run
 
-```
-or can be used on heroku at: [Talli-Home](https://talli-home.herokuapp.com/)"(target|_blank)")
+Or can be used on heroku at: [Talli-Home](https://talli-home.herokuapp.com/ "(target|_blank)")
 
-Signup with your own account on the sign up page: [Signup](https://talli-home.herokuapp.com/signup){:target="blank" rel="noopener"}
-or
-Login with your username and password here: [Login](https://talli-home.herokuapp.com/login){:target="blank" rel="noopener"}
+Signup with your own account on the sign up page: [Signup](https://talli-home.herokuapp.com/signup "(target|_blank)")
 
-username: 'demo1'
-password: '12345678'
+Login with your username and password here: [Login](https://talli-home.herokuapp.com/login "(target|_blank)")
 
-```
+
+
+
 
 # react-redux-firebase
 
@@ -416,7 +414,7 @@ Thank you to all our backers! 🙏
 [npm-image]: https://img.shields.io/npm/v/react-redux-firebase.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/react-redux-firebase
 [npm-downloads-image]: https://img.shields.io/npm/dm/react-redux-firebase.svg?style=flat-square
-[quality-image]: https://npm.packagequality.com/shield/react-redux-firebase.svg?style=flat-square
+[quality-image]: http://npm.packagequality.com/shield/vm2.svg?style=flat-square
 [quality-url]: https://packagequality.com/#?package=react-redux-firebase
 [backers]: https://opencollective.com/react-redux-firebase/backers/badge.svg?style=flat-square&color=blue
 [become-a-backer]: https://opencollective.com/react-redux-firebase#backer
