@@ -36,7 +36,7 @@ export default {
     },
      // Gets the room with the given id
      getRoom: function (id) {
-        return axiosP.get("/rooms/" + id);
+        return axiosP.get("/items/" + id);
     },
     // Deletes the item with the given id
     deleteItem: function (id) {

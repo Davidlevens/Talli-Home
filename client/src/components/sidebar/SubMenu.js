@@ -3,7 +3,7 @@ import  { Collapse, NavItem, NavLink } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
-import './App.scss';
+// import './App.scss';
 
 const SubMenu = props => {
   

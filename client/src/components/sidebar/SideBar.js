@@ -11,7 +11,7 @@ import './App.scss';
 const SideBar = props => (
     <div className={classNames('sidebar', {'is-open': props.isOpen})}>
       <div className="sidebar-header">
-        <span color="info" onClick={props.toggle} style={{color: '#fff'}}>&times;</span>
+        <span  onClick={props.toggle} ></span>
         <h3>Inventory List</h3>
       </div>
       <div className="side-menu">
@@ -77,7 +77,7 @@ const SideBar = props => (
     [
       {
         title: "rooms",
-        target: "/books",          
+        target: "/rooms",          
       },
       {
         title: "Items",
