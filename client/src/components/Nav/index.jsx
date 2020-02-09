@@ -15,13 +15,13 @@ const Nav = (props) => {
             <NavLink tag={Link} to={'/items'}>Home</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} to={'/page-2'}>Category</NavLink>
+            <NavLink tag={Link} to={'/rooms'}>Rooms</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} to={'/page-3'}>About</NavLink>
+            <NavLink tag={Link} to={'/about'}>About</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} to={'/page-4'}>Contact</NavLink>
+            <NavLink tag={Link} to={'/contact'}>Contact</NavLink>
           </NavItem>
        </Navbar>
        </div>

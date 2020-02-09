@@ -26,9 +26,17 @@ export default {
     getItems: function () {
         return axiosP.get("/items");
     },
+    // Gets all items in room
+    getRooms: function (room) {
+        return axiosP.get("/items/" + room);
+    },
     // Gets the item with the given id
     getItem: function (id) {
         return axiosP.get("/items/" + id);
+    },
+     // Gets the room with the given id
+     getRoom: function (id) {
+        return axiosP.get("/rooms/" + id);
     },
     // Deletes the item with the given id
     deleteItem: function (id) {

@@ -68,7 +68,7 @@ class Homes extends Component {
 
     render() {
         return (
-            <Container fluie>
+            <Container fluid>
                 <Row>
                     <Col size="md-6">
                         <Jumbotron>
