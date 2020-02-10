@@ -44,7 +44,7 @@ class itemDetails extends Component {
                             <h4>Item : {this.state.item.name}</h4>                            
                             <h4>Model Number : {this.state.item.modelNumber}</h4>
                             <h4>Purchase Date : {moment(this.state.item.purchaseDate).calendar()}</h4>
-                            <h4>Purchase Price : {this.state.item.purchasePrice}</h4>
+                            <h4>Purchase Price : ${this.state.item.purchasePrice}</h4>
                             <h4>Purchase Location : {this.state.item.purchaseLocation}</h4>
                             <h4>Description : {this.state.item.description}</h4>
                         </article>
