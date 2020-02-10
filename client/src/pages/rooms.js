@@ -14,7 +14,7 @@ class Rooms extends Component {
     state = {
         // MUST MATCH "itemSeed" OBJECT IN "seedDB.js" file 
         room: "",
-       
+
 
     };
 
@@ -24,13 +24,11 @@ class Rooms extends Component {
     }
 
     loadItems = () => {
-        API.getRooms(this.props.match.params.id)
+        if (!this.state.room) return;
+
+        API.getRooms(this.state.room)
             .then(res => {
-                // let roomsDB = res.map(room => {
-                //     return { value: room, display: room }
-                // });
-                this.setState({items: res.data})
-                console.log(res.data)
+                this.setState({ items: res.data })
             })
             .catch(err => console.log(err));
     }
@@ -45,7 +43,6 @@ class Rooms extends Component {
     handleChange = (e) => {
         console.log(e.target.value); // room        
         this.setState({ [e.target.name]: e.target.value });
-        console.log(this.state.room);
     };
 
     handleInputChange = event => {
@@ -58,11 +55,8 @@ class Rooms extends Component {
     handleFormSubmit = event => {
         event.preventDefault();
         if (this.state.room) {
-            API.getRooms()
-                .then(res => this.loadItems())
-                .then(res => this.setState({
-                    room: ""
-                }))
+            API.getRooms(this.state.room)
+                .then(res => this.setState({ items: res.data }))
                 .catch(err => console.log(err));
         }
     };
@@ -108,7 +102,7 @@ class Rooms extends Component {
                         </form>
                     </Col>
                     <Col size="md-6 sm-12">
-                    <Jumbotron>
+                        <Jumbotron>
                             <h1>Item Tracker</h1>
                         </Jumbotron>
                         <Form.Label>Choose an Item to see details</Form.Label>

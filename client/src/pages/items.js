@@ -19,8 +19,7 @@ class Items extends Component {
         purchaseDate: "",
         purchasePrice: "",
         purchaseLocation: "",
-        description: "",
-
+        description: ""
     };
 
     componentDidMount() {
@@ -89,6 +88,7 @@ class Items extends Component {
     };
 
 
+
     render() {
         return (
             <Container className="items" fluid>
@@ -98,15 +98,15 @@ class Items extends Component {
                             <h1>Item Input Form</h1>
                         </Jumbotron>
                         <form>
-                        <Form.Label>Create an Item, Choose a Location, Add Details</Form.Label>
+                            <Form.Label>Create an Item, Choose a Location, Add Details</Form.Label>
                             <Input
                                 value={this.state.name}
                                 onChange={this.handleInputChange}
                                 name="name"
                                 placeholder="Item Name (required)"
-                                autocomplete="off"
+                                autoComplete="off"
                             />
-                            <Form.Group controlId="exampleForm.ControlSelect1">                                
+                            <Form.Group controlId="exampleForm.ControlSelect1">
                                 <Form.Control as="select"
                                     value={this.state.room}
                                     onChange={this.handleChange}

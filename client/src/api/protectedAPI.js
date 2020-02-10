@@ -28,14 +28,10 @@ export default {
     },
     // Gets all items in room
     getRooms: function (room) {
-        return axiosP.get("/items/" + room);
+        return axiosP.get("/items/inroom/" + room);
     },
     // Gets the item with the given id
     getItem: function (id) {
-        return axiosP.get("/items/" + id);
-    },
-     // Gets the room with the given id
-     getRoom: function (id) {
         return axiosP.get("/items/" + id);
     },
     // Deletes the item with the given id

@@ -12,4 +12,7 @@ router.route("/:id")
   .put(itemController.update)
   .delete(itemController.remove);
 
+  router.route("/inroom/:roomname")
+  .get(itemController.findAllInRoom);
+  
 module.exports = router;
