@@ -4,6 +4,7 @@ import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 import API from "../api";
 import './App.scss';
+import moment from 'moment';
 
 class itemDetails extends Component {
     state = {
@@ -42,8 +43,8 @@ class itemDetails extends Component {
                             <h4>Room : {this.state.item.room}</h4>
                             <h4>Item : {this.state.item.name}</h4>                            
                             <h4>Model Number : {this.state.item.modelNumber}</h4>
-                            <h4>Purchase Date : {this.state.item.purchaseDate}</h4>
-                            <h4>Purchase Price : ${this.state.item.purchasePrice}</h4>
+                            <h4>Purchase Date : {moment(this.state.item.purchaseDate).calendar()}</h4>
+                            <h4>Purchase Price : {this.state.item.purchasePrice}</h4>
                             <h4>Purchase Location : {this.state.item.purchaseLocation}</h4>
                             <h4>Description : {this.state.item.description}</h4>
                         </article>
