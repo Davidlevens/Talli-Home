@@ -71,7 +71,7 @@ class Rooms extends Component {
                             <h1>Pick a Room</h1>
                         </Jumbotron>
                         <form>
-                            <Form.Label>Chose a room to see it's contents</Form.Label>
+                            <Form.Label><h4>Chose a room to see it's contents</h4></Form.Label>
                             <Form.Group controlId="exampleForm.ControlSelect1">
                                 <Form.Control as="select"
                                     value={this.state.room}
@@ -105,7 +105,7 @@ class Rooms extends Component {
                         <Jumbotron>
                             <h1>Item Tracker</h1>
                         </Jumbotron>
-                        <Form.Label>Choose an Item to see details</Form.Label>
+                        <Form.Label><h4>Choose an Item to see details</h4></Form.Label>
                         {this.state.items && this.state.items.length ? (
                             <List>
                                 {this.state.items.map((item) => (

@@ -98,7 +98,7 @@ class Items extends Component {
                             <h1>Item Input Form</h1>
                         </Jumbotron>
                         <form>
-                            <Form.Label>Create an Item, Choose a Location, Add Details</Form.Label>
+                            <Form.Label><h4>Create an Item, Choose a Location, Add Details</h4></Form.Label>
                             <Input
                                 value={this.state.name}
                                 onChange={this.handleInputChange}
@@ -167,7 +167,7 @@ class Items extends Component {
                         <Jumbotron>
                             <h1>Item Tracker</h1>
                         </Jumbotron>
-                        <Form.Label>Choose an Item to see details</Form.Label>
+                        <Form.Label><h4>Choose an Item to see details</h4></Form.Label>
                         {this.state.items && this.state.items.length ? (
                             <List>
                                 {this.state.items.map(item => (
