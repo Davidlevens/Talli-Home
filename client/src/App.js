@@ -18,6 +18,7 @@ import itemDetails from "./pages/itemDetails";
 import Items from "./pages/items";
 import Rooms from "./pages/rooms";
 import about from "./pages/about";
+import contact from "./pages/contact";
 
 
 
@@ -43,6 +44,7 @@ export default function App() {
         <ConnectedPrivateRoute path="/items/:id" component={itemDetails} />
         <ConnectedPrivateRoute exact path="/rooms" component={Rooms} />
         <ConnectedPrivateRoute path="/about" component={about} />
+        <ConnectedPrivateRoute path="/contact" component={contact} />
 
 
         <Route path="*"><NoMatch /></Route>
