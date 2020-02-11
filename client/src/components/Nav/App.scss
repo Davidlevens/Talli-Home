@@ -18,10 +18,10 @@
 }
 .navbar {
     // background-color: purple;
-    background-image: url("/images/logo.png");
-
+    background-image: url("/images/texture.jpg");
+    // opacity: .8;
 // background-image: url(${logo});
-height: 200px;
+    height: 130px;
 }
 
 .ml-auto {
@@ -42,7 +42,10 @@ height: 200px;
 }
 
 img  {
-    height: 200px;
+    height: 125px;
+    padding-top: 10px;
+    -webkit-filter: drop-shadow(2px 2px 2px gray);
+    filter:         drop-shadow(2px 2px 2px gray); 
 }
 
 

@@ -8,7 +8,9 @@ import './App.scss';
 import { onLogout } from '../../redux/actions'
 
 const Nav = (props) => {
-  return <Navbar className='navbar-expand-lg justify-content-between' navbar="true">
+  return (
+
+  <Navbar className='navbar-expand-lg justify-content-between' navbar="true">
    <div container="navlink">
   <Navbar className="ml-auto" navbar>
           <NavItem>
@@ -25,7 +27,7 @@ const Nav = (props) => {
           </NavItem>
        </Navbar>
        </div>
-    <Navbar.Brand className="type" href="/"><img src="./images/logo.png" alt="TalliHome Logo"></img> </Navbar.Brand>
+    <Navbar.Brand className="type" href="/"><img src="./images/logotr.png" alt="TalliHome Logo"></img> </Navbar.Brand>
 
     {
       props.user ?
@@ -34,7 +36,8 @@ const Nav = (props) => {
           <Button>Login</Button>
         </Link>
     }
-  </Navbar>;
+  </Navbar>
+  );
 };
 
 export default connect(
