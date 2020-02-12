@@ -27,8 +27,8 @@ class About extends Component {
                     <Col size="md-12">
                         <Jumbotron>
                             <h1>
-                                {this.state.item.name}
-                                <br/> in
+                                Talli-Home
+                                <br/> is
                                 <br/> 
                                 {this.state.item.location}
                             </h1>
@@ -38,14 +38,24 @@ class About extends Component {
                 <Row>
                     <Col size="md-10 md-offset-1">
                         <article>
-                            <h2>Details</h2>
-                            <h4>Item : {this.state.item.name}</h4>
-                            <h4>Location : {this.state.item.location}</h4>
-                            <h4>Model Number : {this.state.item.modelNumber}</h4>
-                            <h4>Purchase Date : {this.state.item.purchaseDate}</h4>
-                            <h4>Purchase Price : {this.state.item.purchasePrice}</h4>
-                            <h4>Purchase Location : {this.state.item.purchaseLocation}</h4>
-                            <h4>Description : {this.state.item.description}</h4>
+                            <h2>Home Inventory</h2>
+                            <p>
+                            Talli-Home is a home inventory app to help the user keep track of their property. 
+                            It can be used to record all the important information about items they own. 
+                            Along with the name of an item, you choose what room it’s located in as well 
+                            as the model/serial number, purchase date, purchase location, value and description. 
+                            Future version will include inputs for an image and receipt.
+                            </p>
+                            <h2>
+                                Insurance Inventory
+                            </h2>
+                            <p>
+                                Talli-Home is also an effective tool for keeping track of property that might be 
+                                insured under a homeowner or renter insuranmce policy. Making a claim due to loss 
+                                requires a record of your homes contents along with model number purchase date, 
+                                location, description and receipts.  
+                            </p>
+                            
                         </article>
                     </Col>
                 </Row>
