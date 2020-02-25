@@ -22,7 +22,7 @@ class About extends Component {
 
     render() {
         return (
-            <Container className="details" fluid>
+            <Container className="about" fluid>
                 <Row>
                     <Col size="md-12">
                         <Jumbotron>

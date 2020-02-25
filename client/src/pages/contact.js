@@ -27,10 +27,10 @@ class Contact extends Component {
                     <Col size="md-12">
                         <Jumbotron>
                             <h1>
-                                {this.state.item.name}
-                                <br /> in
+                                Questions, Comments, Suggestions
+                                <br /> are
                                 <br />
-                                {this.state.item.location}
+                                Welcome and Appreciated
                             </h1>
                         </Jumbotron>
                     </Col>
@@ -61,7 +61,7 @@ class Contact extends Component {
                                                     <a class="nav-link" href="mailto:davidjaylevens@gmail.com"><h4>Email</h4></a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link disabled" href="#"><h4>Mobile: 914.261.6863</h4></a>
+                                                    <a class="nav-link" href="tel:+9142616863"><h4>Mobile: 914.261.6863</h4></a>
                                                 </li>
                                             </ul>
                                         </div>
