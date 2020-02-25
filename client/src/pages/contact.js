@@ -28,8 +28,8 @@ class Contact extends Component {
                         <Jumbotron>
                             <h1>
                                 {this.state.item.name}
-                                <br/> in
-                                <br/> 
+                                <br /> in
+                                <br />
                                 {this.state.item.location}
                             </h1>
                         </Jumbotron>
@@ -37,28 +37,49 @@ class Contact extends Component {
                 </Row>
                 <Row>
                     <Col size="md-10 md-offset-1">
-                        <article>
-                            <h2>Details</h2>
-                            <h4>Item : {this.state.item.name}</h4>
-                            <h4>Location : {this.state.item.location}</h4>
-                            <h4>Model Number : {this.state.item.modelNumber}</h4>
-                            <h4>Purchase Date : {this.state.item.purchaseDate}</h4>
-                            <h4>Purchase Price : {this.state.item.purchasePrice}</h4>
-                            <h4>Purchase Location : {this.state.item.purchaseLocation}</h4>
-                            <h4>Description : {this.state.item.description}</h4>
-                        </article>
+                        <div class="card border-0 shadow my-5">
+                            <div class="card-body p-3">
+                                <h1 class="font-weight-bolder">Contact</h1>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1"><h4>Name</h4></label>
+                                        <input type="text" class="form-control" placeholder="Your Name" />
+                                    </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1"><h4>Email address</h4></label>
+                                            <input type="email" class="form-control" placeholder="example@gmail.com" />
+                                        </div>
+                                            <div class="form-group">
+                                                <label for="exampleFormControlTextarea1"><h4>Message</h4></label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                    placeholder="Please say hello..." rows="6"></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                                        <div class="row">
+                                            <ul class="nav justify-content-end">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="mailto:davidjaylevens@gmail.com"><h4>Email</h4></a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link disabled" href="#"><h4>Mobile: 914.261.6863</h4></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                             </div>       
+                         </div>        
                     </Col>
                 </Row>
-                <Row>
-                    <Col size="md-2">
-                        <button>
-                        <Link to="/">← Back to Inventory</Link>
-                        </button>
-                    </Col>
-                </Row>
+                        <Row>
+                            <Col size="md-2">
+                                <button>
+                                    <Link to="/">← Back to Inventory</Link>
+                                </button>
+                            </Col>
+                        </Row>
             </Container>
-        );
-    }
-}
-
+                    );
+                }
+            }
+            
 export default Contact;
