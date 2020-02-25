@@ -10,7 +10,7 @@ import { onLogout } from '../../redux/actions'
 const Nav = (props) => {
   return (
 
-  <Navbar className='navbar-expand-lg justify-content-between' navbar="true">
+  <Navbar className='navbar-expand-lg justify-content-between' >
    <div container="navlink">
   <Navbar className="ml-auto" navbar>
           <NavItem>

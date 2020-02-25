@@ -35,7 +35,10 @@ Signup with your own account on the sign up page: [Signup](https://talli-home.he
 
 Login with your username and password here: [Login](https://talli-home.herokuapp.com/login "(target|_blank)")
 
+To view a demo:
 
+* username: 'demo1'
+* password: '12345678'
 
 
 

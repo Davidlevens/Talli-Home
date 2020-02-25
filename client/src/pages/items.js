@@ -30,9 +30,6 @@ class Items extends Component {
     loadItems = () => {
         API.getItems()
             .then(res => {
-                // let roomsDB = res.map(room => {
-                //     return { value: room, display: room }
-                // });
                 this.setState({
                     items: res.data, name: "", room: "", description: "", purchaseDate: "",
                     purchasePrice: ""
