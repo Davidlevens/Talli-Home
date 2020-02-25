@@ -58,7 +58,7 @@ class Contact extends Component {
                                         <div class="row">
                                             <ul class="nav justify-content-end">
                                                 <li class="nav-item">
-                                                    <a class="nav-link" href="mailto:davidjaylevens@gmail.com"><h4>Email</h4></a>
+                                                    <a class="nav-link" href="mailto:davidjaylevens@gmail.com"><h4>Email: davidjaylevens@gmail.com</h4></a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a class="nav-link" href="tel:+9142616863"><h4>Mobile: 914.261.6863</h4></a>
