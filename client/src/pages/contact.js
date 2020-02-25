@@ -37,9 +37,8 @@ class Contact extends Component {
                 </Row>
                 <Row>
                     <Col size="md-10 md-offset-1">
-                        <div class="card border-0 shadow my-5">
-                            <div class="card-body p-3">
-                                <h1 class="font-weight-bolder">Contact</h1>
+                        
+                                <h1>Contact</h1>
                                 <form>
                                     <div class="form-group">
                                         <label for="exampleFormControlInput1"><h4>Name</h4></label>
@@ -66,8 +65,7 @@ class Contact extends Component {
                                                 </li>
                                             </ul>
                                         </div>
-                             </div>       
-                         </div>        
+                        
                     </Col>
                 </Row>
                         <Row>
