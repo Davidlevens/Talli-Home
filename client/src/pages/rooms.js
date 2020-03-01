@@ -79,17 +79,18 @@ class Rooms extends Component {
                                     name="room"
                                     placeholder="Room Name (required)" >
                                     <option id='0'>Room Name (required)</option>
-                                    <option>Kitchen</option>
-                                    <option>Master Bedroom</option>
+                                    <option>Bathroom 1</option>
+                                    <option>Bathroom 2</option>
                                     <option>Bedroom 1</option>
                                     <option>Bedroom 2</option>
                                     <option>Bedroom 3</option>
-                                    <option>Kitchen</option>
-                                    <option>Living Room</option>
                                     <option>Dining Room</option>
                                     <option>Family Room</option>
-                                    <option>Office</option>
                                     <option>Garage</option>
+                                    <option>Kitchen</option>
+                                    <option>Living Room</option>
+                                    <option>Master Bedroom</option>
+                                    <option>Office</option>
                                 </Form.Control>
                             </Form.Group>
 
